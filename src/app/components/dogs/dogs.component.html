@@ -9,10 +9,10 @@
   <div class="dog-list">
     <div *ngFor="let dog of dogs">
       <a routerLink="/dogs/{{dog._id}}">
-        {{dog.name}} 
-        <span><button>Update</button></span>
-        <span><button>Delete</button></span>
+        {{dog.name}}   
       </a>
+      <span><button>Update</button></span>
+      <span><button>Delete</button></span>
     </div>
   </div>
 </div>

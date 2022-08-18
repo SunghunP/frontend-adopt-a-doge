@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+
 import { Dog } from '../models/dog';
-import { Observable } from 'rxjs';
+import { Observable, of} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -16,4 +17,7 @@ export class DogsService {
     return (this.http.get<Dog[]>(this._url));
   }
 
+  getDog(id: string): Observable<Dog> {
+    return this.http.get<Dog>(`${this._url}/${id}`);
+  }
 }
