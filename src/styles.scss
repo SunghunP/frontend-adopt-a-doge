@@ -25,6 +25,10 @@ body {
   align-items: center;
 }
 
+.col {
+  flex-direction: column;
+}
+
 .header {
   justify-content: space-between;
   padding: 0 20px;
@@ -38,6 +42,11 @@ body {
     color: brown;
     cursor: pointer;
   }
+}
+
+.h1s {
+  margin: 0px;
+  padding: 10px;
 }
 
 .footer {
@@ -69,19 +78,61 @@ body {
   }
 }
 
-.home {
-  font-size: 50px;
-  margin-bottom: 60px;
-}
-
 ///////////////////////////
 /// component structure ///
 ///////////////////////////
 app-home, app-dogs {
+  height: 100%;
+  padding-bottom: 60px;
+}
+
+/// home
+app-home {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  margin-bottom: 60px;
+  background-image: url('../src/app/images/corgo.jpg');
+  background-size: cover;
+  background-position: bottom;
+}
+
+.home {
+  font-size: 50px;
+  padding-bottom: 100px;
+  margin: 10px;
+}
+
+/// dogs
+app-dogs {
+  text-align: center;
+}
+
+.dogs-adoption-info {
+  background-image: url(./app/images/doge-snoot.jpg);
+  min-height: 500px;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  align-items: flex-start;
+  .h1s {
+    width: max-content;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border-radius: 10px;
+    margin: 20px;
+  }
+
+}
+
+.dog-list {
+  padding-bottom: 120px;
+}
+
+.adoption-info {
+  text-align: center;
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: var(--text-color);
+  padding: 20px; 
 }

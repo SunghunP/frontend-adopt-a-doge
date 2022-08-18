@@ -1,5 +1,11 @@
+<div class="dogs-adoption-info flex col">
+  <h1 class="h1s">Adoption Info</h1>
+  <p class="adoption-info">All of our wonderful dogs are looking for a lovely home to spend the rest of their lives in. We have all sorts and sizes of dogs perfect for any family! 
+    <span>Please consider that adopting a dog is a big responsibility</span>
+  </p>
+</div>
 <h1>Doge List</h1>
-<div>
+<div class="dog-list">
   <div *ngFor="let dog of dogs">
     <a routerLink="/dogs/{{dog._id}}">
       {{dog.name}} 
