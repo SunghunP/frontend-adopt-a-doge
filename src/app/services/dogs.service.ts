@@ -12,7 +12,8 @@ export class DogsService {
   constructor(private http: HttpClient) {}
 
   getDogs(): Observable<Dog[]> {
-    return this.http.get<Dog[]>(this._url);
+    console.log(this.http.get<Dog[]>(this._url));
+    return (this.http.get<Dog[]>(this._url));
   }
 
 }

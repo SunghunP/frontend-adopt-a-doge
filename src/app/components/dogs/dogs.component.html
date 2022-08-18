@@ -4,13 +4,15 @@
     <span>Please consider that adopting a dog is a big responsibility</span>
   </p>
 </div>
-<h1>Doge List</h1>
-<div class="dog-list">
-  <div *ngFor="let dog of dogs">
-    <a routerLink="/dogs/{{dog._id}}">
-      {{dog.name}} 
-      <span><button>Update</button></span>
-      <span><button>Delete</button></span>
-    </a>
+<div class="dogs">
+  <h1 class="h1s">Doge List</h1>
+  <div class="dog-list">
+    <div *ngFor="let dog of dogs">
+      <a routerLink="/dogs/{{dog._id}}">
+        {{dog.name}} 
+        <span><button>Update</button></span>
+        <span><button>Delete</button></span>
+      </a>
+    </div>
   </div>
 </div>
