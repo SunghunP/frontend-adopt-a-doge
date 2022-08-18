@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  justify-content: space-between;
+  padding: 0 20px;
+  color: whitesmoke;
+  background-color: black;
+  h2:hover {
+    cursor:pointer;
+  }
+  a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 0 10px;
+  }
+}
+
