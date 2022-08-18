@@ -1,4 +1,10 @@
 <h1>Doge List</h1>
-<ul *ngFor="let dog of dogs">
-  <li>{{dog.name}}</li>
-</ul>
+<div>
+  <div *ngFor="let dog of dogs">
+    <a routerLink="/dogs/{{dog._id}}">
+      {{dog.name}} 
+      <span><button>Update</button></span>
+      <span><button>Delete</button></span>
+    </a>
+  </div>
+</div>

@@ -1,6 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --text-color: whitesmoke;
+  --background-color: black;
+}
+body, html {
+  height: 100%;
+}
+
+app-root{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   margin: 0px;
+  display: flex;
+  flex-direction: column;
 }
 
 .flex {
@@ -12,15 +28,60 @@ body {
 .header {
   justify-content: space-between;
   padding: 0 20px;
-  color: whitesmoke;
-  background-color: black;
-  h2:hover {
-    cursor:pointer;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  h1 {
+    font-size: 35px;
   }
-  a {
-    text-decoration: none;
-    color: whitesmoke;
-    margin: 0 10px;
+  h1:hover {
+    transition: all 0.3s ease-out;
+    color: brown;
+    cursor: pointer;
   }
 }
 
+.footer {
+  position:fixed;
+  bottom:0px;
+  width: 100%;
+  background-color: var(--background-color);
+  height: 60px;
+}
+
+.links {
+  text-decoration: none;
+  margin: 0 10px;
+  color: var(--text-color);
+  .nav-link {
+    font-size: 25px;
+  }
+}
+.links:hover {
+  .nav-link {
+    text-decoration: underline;
+    color: red;
+  }
+  .github:hover {
+    color: grey;
+  }
+  .linkedin {
+    color: rgb(50, 114, 253);
+  }
+}
+
+.home {
+  font-size: 50px;
+  margin-bottom: 60px;
+}
+
+///////////////////////////
+/// component structure ///
+///////////////////////////
+app-home, app-dogs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-bottom: 60px;
+}

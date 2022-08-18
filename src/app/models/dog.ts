@@ -1,10 +1,7 @@
-export interface Dogs {
+export interface Dog {
   name: string,
   _id : string,
-  id: number,
   breed: string,
-  height: number,
-  weight: number,
   desc: string,
   adopted: boolean,
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DogsService } from 'src/app/services/dogs.service';
-import { Dogs } from 'src/app/models/dogs';
+import { Dog } from 'src/app/models/dog';
 
 @Component({
   selector: 'app-dogs',
@@ -9,13 +9,17 @@ import { Dogs } from 'src/app/models/dogs';
 })
 export class DogsComponent implements OnInit {
 
-  dogs: Dogs[] = [];
+  dogs: Dog[] = [];
 
   constructor(private dogsService: DogsService) { }
 
   ngOnInit(): void {
+    this.getDogs();
+  }
+  
+  getDogs(): void {
     this.dogsService.getDogs()
-    .subscribe(dogs => this.dogs = dogs);
+      .subscribe(dogs => this.dogs = dogs);
   }
 
 }
