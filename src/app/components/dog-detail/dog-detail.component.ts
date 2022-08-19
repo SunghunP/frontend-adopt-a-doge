@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { Dog } from 'src/app/models/dog';
 import { DogsService } from 'src/app/services/dogs.service';
+import { __values } from 'tslib';
 
 
 @Component({
@@ -22,20 +23,13 @@ export class DogDetailComponent implements OnInit {
   ngOnInit(): void {
     this.getDog();
   }
-
+  
   getDog(): void {
-    const id = this.route.paramMap.subscribe({
-      next: (params) => {
-        const id = params.get('id');
-        if (id) {
-          this.dogService.getDog(id)
-          .subscribe({
-            next: (dog) => {
-              this.dog = dog
-            }
-          })
-        }
-      }
+    const id: string = this.route.snapshot.params.id;
+    this.dogService.getDog(id)
+    .subscribe(dog => {
+      this.dog = dog
     })
   }
+
 }
