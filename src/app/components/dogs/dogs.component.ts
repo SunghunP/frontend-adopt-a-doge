@@ -20,7 +20,6 @@ export class DogsComponent implements OnInit {
   getDogs(): void {
     this.dogsService.getDogs()
       .subscribe(dogs => {
-        console.log(dogs)
         this.dogs = dogs
       });
   }

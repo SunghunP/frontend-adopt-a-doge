@@ -1,0 +1,63 @@
+<div class="dog-form flex col">
+  <h1>Create a dog adoption!</h1>
+  <form [formGroup]="dogForm" (ngSubmit)="onSubmit()">
+    <div class="form-item flex col">
+      <label for="name">Name</label>
+      <input 
+        type="text" 
+        formControlName="name" 
+        name="name"
+      >
+      <div
+        class="non-valid"
+        *ngIf="submitted && myForm['name'].errors?.['required']"
+      >
+        Please enter the name
+      </div>
+    </div>
+
+    <div class="form-item flex col">
+      <label for="breed">Breed</label>
+      <input 
+        type="text" 
+        formControlName="breed" 
+        name="breed"
+      >
+      <div
+      class="non-valid"
+      *ngIf="submitted && myForm['breed'].errors?.['required']"
+      >
+        Please enter the breed
+      </div>
+    </div>
+
+    <div class="form-item flex col">
+      <label for="desc">Description</label>
+      <input 
+        type="text" 
+        formControlName="desc" 
+        name="desc"
+      >
+      <div
+      class="non-valid"
+      *ngIf="submitted && myForm['desc'].errors?.['required']"
+      >
+        Please enter the description
+      </div>
+    </div>
+
+    <div class="form-item flex col">
+      <label for="adopted">Adopted</label>
+      <select required formControlName="adopted" name="adopted"
+      >
+        <option *ngFor="let adopt of adopted" [value]="adopt">{{adopt}}</option>
+      </select>
+    </div>
+
+    <div class="form-item flex col">
+      <button class="btn btn-success btn-lg btn-block" type="submit">
+        Register
+      </button>
+    </div>
+  </form>
+</div>
