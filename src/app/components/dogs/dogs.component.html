@@ -6,13 +6,12 @@
 </div>
 <div class="dogs">
   <h1 class="h1s">Doge List</h1>
-  <div class="dog-list">
-    <div *ngFor="let dog of dogs">
-      <a routerLink="/dogs/{{dog._id}}">
-        {{dog.name}}   
+  <div class="dog-list flex">
+    <div *ngFor="let dog of dogs" class="dog flex col">
+      <a class="flex col" routerLink="/dogs/{{dog._id}}">
+        <span class="dog-name">{{dog.name}}</span>
+        <img class="dogImg" src="{{dog.img}}">
       </a>
-      <span><button>Update</button></span>
-      <span><button>Delete</button></span>
     </div>
   </div>
 </div>

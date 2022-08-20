@@ -4,4 +4,5 @@ export interface Dog {
   breed: string,
   desc: string,
   adopted: boolean,
+  img: string,
 }

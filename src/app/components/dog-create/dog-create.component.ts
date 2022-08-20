@@ -17,6 +17,7 @@ export class DogCreateComponent implements OnInit {
     name: new FormControl('', [Validators.required]),
     breed: new FormControl('', [Validators.required]),
     desc: new FormControl('', [Validators.required]),
+    img: new FormControl('', [Validators.required]),
     adopted: new FormControl(this.adopted[1], [Validators.required]),
   });
 
@@ -42,7 +43,7 @@ export class DogCreateComponent implements OnInit {
     } else {
       return this.dogService.createDog(this.dogForm.value).subscribe({
         complete: () => {
-          console.log('Dog successfully created!'),
+          console.log('Dog created!'),
           this.ngZone.run(
             () => this.router.navigateByUrl('/dogs')
           )

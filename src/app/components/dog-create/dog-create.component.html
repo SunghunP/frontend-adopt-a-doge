@@ -47,6 +47,21 @@
     </div>
 
     <div class="form-item flex col">
+      <label for="img">Image</label>
+      <input 
+        type="text" 
+        formControlName="img" 
+        name="img"
+      >
+      <div
+      class="non-valid"
+      *ngIf="submitted && myForm['img'].errors?.['required']"
+      >
+        Please enter a image link
+      </div>
+    </div>
+
+    <div class="form-item flex col">
       <label for="adopted">Adopted</label>
       <select required formControlName="adopted" name="adopted"
       >

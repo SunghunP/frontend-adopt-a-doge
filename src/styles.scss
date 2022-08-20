@@ -141,10 +141,39 @@ app-dogs {
   background-image: url('./app/images/simpleBg.jpg');
   background-position: center;
   background-size: cover;
-  height: 100%;
+  height: fit-content;
   padding-bottom: 120px;
 }
 
+.dog {
+  margin: 32px;
+  background-color: bisque;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  .dog-name {
+    margin: 20px 0;
+    text-decoration: none;
+    color: #011841;
+  }
+  img {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+}
+
+.dog-list{
+  flex-wrap: wrap;
+}
+
+.dogImg {
+  width: 400px;
+  height: auto;
+}
+
+
+// Dog Create form
 .non-valid {
   color: red;
 }
+
+// Dog Details

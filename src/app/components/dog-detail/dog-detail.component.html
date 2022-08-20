@@ -1,6 +1,8 @@
 <div *ngIf="dog">
-  <p>{{dog.name}}</p>
-  <p>{{dog.breed}}</p>
-  <p>{{dog.desc}}</p>
-  <p>{{dog.adopted}}</p>
+  <div class="dog-detail flex col">
+    <span class="dog-name-detail">Name: {{dog.name | uppercase}}</span>
+    <img class="dogImg-detail" src="{{dog.img}}">
+    <div class="dog-breed-detail">Breed: {{dog.breed}}</div>
+    <div class="dog-desc-detail">{{dog.desc}}</div>
+  </div>
 </div>

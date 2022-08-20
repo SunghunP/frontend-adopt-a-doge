@@ -4,5 +4,6 @@ export class Dog {
     public breed: string,
     public desc: string,
     public adopted: boolean,
+    public img: string,
   ) {}
 }
