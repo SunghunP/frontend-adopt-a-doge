@@ -23,4 +23,8 @@ export class DogsService {
   createDog(data: any) {
     return this.http.post(`${this._url}`, data);
   }
+
+  updateDog(id: string, data: any) {
+    return this.http.put(`${this._url}/${id}`, data)
+  }
 }

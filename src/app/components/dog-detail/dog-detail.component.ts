@@ -17,7 +17,7 @@ export class DogDetailComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private dogService: DogsService,
-    private location: Location
+    private location: Location,
   ) { }
 
   ngOnInit(): void {
@@ -32,4 +32,17 @@ export class DogDetailComponent implements OnInit {
     })
   }
 
+  navigateBack(): void {
+    console.log(this.location, 'bruh')
+    this.location.back();
+  }
+
+  save(): void {
+    const id: string = this.route.snapshot.params.id;
+    if (this.dog) {
+      console.log(this.dog)
+      this.dogService.updateDog(id, this.dog)
+        .subscribe(() => this.navigateBack())
+    }
+  }
 }
