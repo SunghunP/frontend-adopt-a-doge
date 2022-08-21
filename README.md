@@ -8,10 +8,13 @@ Server App: https://adopt-a-doge.herokuapp.com/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
 
-### Live Site
+## Site Preview
+
 > Landing Page: <img src="./img/home.png" />
 > Dogs Page: <img src="./img/dogs.png" />
 > Create Form Page:  <img src="./img/Createform.png" />
+
+## Technologies Used
 
 - Angular
 - HTML
