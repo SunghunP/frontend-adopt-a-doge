@@ -27,4 +27,8 @@ export class DogsService {
   updateDog(id: string, data: any) {
     return this.http.put(`${this._url}/${id}`, data)
   }
+
+  deleteDog(id: string) {
+    return this.http.delete(`${this._url}/${id}`)
+  }
 }
