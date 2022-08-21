@@ -1,4 +1,4 @@
-<div *ngIf="dog">
+<div *ngIf="dog" class="bruh">
   <div class="dog-detail flex col">
     <span class="dog-name-detail">Name: {{dog.name | uppercase}}</span>
     <img class="dogImg-detail" src="{{dog.img}}">
@@ -9,7 +9,7 @@
   <div class="flex col">
     <h1>Edit {{dog.name}}</h1>
     <label for="dogName">Dog Name</label>
-    <input name="dogName" [(ngModel)]="dog.name">
+    <input name="dogName" class="dogName" [(ngModel)]="dog.name">
     <label for="dogBreed">Dog Breed</label>
     <input [(ngModel)]="dog.breed">
     <label for="dogDesc">Dog Description</label>

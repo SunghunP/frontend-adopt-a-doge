@@ -113,6 +113,11 @@ app-dogs {
   text-align: center;
 }
 
+.bruh {
+  height: fit-content;
+  margin-bottom: 120px;
+}
+
 .dogs-adoption-info {
   background-image: url(./app/images/doge-snoot.jpg);
   min-height: 500px;
@@ -170,6 +175,9 @@ app-dogs {
   height: auto;
 }
 
+// .dogName {
+//   height: 600px;
+// }
 
 // Dog Create form
 .non-valid {

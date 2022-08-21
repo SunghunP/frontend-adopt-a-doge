@@ -34,11 +34,11 @@ export class DogDetailComponent implements OnInit {
     })
   }
   navigateToDog(): void {
-    this.router.navigateByUrl(`/dogs/${this.id}`)
+    this.router.navigateByUrl(`/dogs/${this.id}`);
   }
 
   navigateToDogs(): void {
-    this.router.navigateByUrl('/dogs')
+    this.router.navigateByUrl('/dogs');
   }
 
   save(): void {
