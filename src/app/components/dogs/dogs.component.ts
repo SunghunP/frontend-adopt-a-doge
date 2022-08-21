@@ -8,7 +8,6 @@ import { Dog } from 'src/app/models/dog';
   styleUrls: ['./dogs.component.css']
 })
 export class DogsComponent implements OnInit {
-
   dogs: Dog[] = [];
 
   constructor(private dogsService: DogsService) {

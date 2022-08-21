@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components/home/home.component';
 import { DogDetailComponent } from './components/dog-detail/dog-detail.component';
 import { DogCreateComponent } from './components/dog-create/dog-create.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { DogCreateComponent } from './components/dog-create/dog-create.component
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
+    CommonModule,
   ],
   providers: [DogsService],
   bootstrap: [AppComponent]
