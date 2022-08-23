@@ -1,6 +1,6 @@
 # AdoptADoge
 
-Doge adopter is a small dog adoption website with full CRUD capabilities.
+Doge adopter is a small dog adoption website with full CRUD capabilities.<br>
 **LIVE WEBSITE**: https://github.com/SunghunP/frontend-adopt-a-doge <br>
 Client Repo: https://github.com/SunghunP/frontend-adopt-a-doge <br>
 Server Repo: https://github.com/SunghunP/backend-adopt-a-doge <br>
