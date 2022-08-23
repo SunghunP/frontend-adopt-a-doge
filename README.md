@@ -1,7 +1,7 @@
 # AdoptADoge
 
 Doge adopter is a small dog adoption website with full CRUD capabilities.<br>
-**LIVE WEBSITE**: https://github.com/SunghunP/frontend-adopt-a-doge <br>
+**LIVE WEBSITE**: https://doge-adopter.netlify.app/dogs <br>
 Client Repo: https://github.com/SunghunP/frontend-adopt-a-doge <br>
 Server Repo: https://github.com/SunghunP/backend-adopt-a-doge <br>
 Server App: https://adopt-a-doge.herokuapp.com/ <br>
@@ -12,7 +12,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 > Landing Page: <img src="./img/home.png" />
 > Dogs Page: <img src="./img/dogs.png" />
-> Create Form Page:  <img src="./img/Createform.png" />
+> Create Form Page:  <img src="./img/Createform.png" />p
 
 ## Technologies Used
 
