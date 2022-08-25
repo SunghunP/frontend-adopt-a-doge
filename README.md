@@ -1,7 +1,7 @@
 # AdoptADoge
 
 Doge adopter is a small dog adoption website with full CRUD capabilities.<br>
-**LIVE WEBSITE**: https://doge-adopter.netlify.app/dogs <br>
+**LIVE WEBSITE**: https://doge-adopter.netlify.app/ <br>
 Client Repo: https://github.com/SunghunP/frontend-adopt-a-doge <br>
 Server Repo: https://github.com/SunghunP/backend-adopt-a-doge <br>
 Server App: https://adopt-a-doge.herokuapp.com/ <br>
