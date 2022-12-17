@@ -17,6 +17,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Technologies Used
 
 - Angular
-- HTML
+- HTML5
+- CSS
 - SCSS
+- TypeScript
+- JavaScript
 - Google Fonts
