@@ -7,7 +7,7 @@ import { Observable, of} from 'rxjs';
   providedIn: 'root'
 })
 export class DogsService {
-  private _url: string = 'https://adopt-a-doge.herokuapp.com/doge'
+  private _url: string = 'https://adopt-a-doge.onrender.com/doge'
   
   constructor(private http: HttpClient) {}
 
